@@ -4,15 +4,15 @@ Admin dashboard for startups.
 
 ## Installation
 
-You must install TrayLabs Admin by composer:
+You can install TrayLabs Admin using composer:
 
-```sh
+```ssh
 $ composer create-project --prefer-dist tray-labs/admin /path/to/project
 ```
 
-Or download a [zip file](https://github.com/tray-labs/admin/archive/master.zip).
+Or downloading a [zip file](https://github.com/tray-labs/admin/archive/master.zip).
 
-Create a database for TrayLabsAdmin:
+Create the database for TrayLabsAdmin:
 ```sql
 CREATE DATABASE admin;
 ```
@@ -20,43 +20,39 @@ CREATE DATABASE admin;
 Setup .env file for database access.
 
 Install dependencies from php:
-
-```sh
+```ssh
 $ composer install
 
 ```
 
 Install dependencies from javascript:
 
-```sh
+```ssh
 $ yarn
 
 ```
 
 Run npm to compile:
-```sh
+```ssh
 $ npm run dev
 ```
 
 Run migrations:
-```sh
+```ssh
 $ php artisan migrate
 ```
 
 ## Configuration
 
-By default, the namespace's project is `TrayLabs\Admin`.
-If you want, you can change manually the namespace:
+By default, the namespace's project is `TrayLabs\Admin`. You can change it manually if you feel so in the files below:
 
-* https://github.com/tray-labs/admin/blob/master/composer.json#L27
-* https://github.com/tray-labs/admin/blob/master/app/Http/Controllers/Auth/RegisterController.php#L5
-* https://github.com/tray-labs/admin/blob/master/config/auth.php#L70
-* https://github.com/tray-labs/admin/blob/master/config/services.php#L33
+https://github.com/tray-labs/admin/blob/master/composer.json#L27
 
-Run composer for update namespace:
-```sh
-$ composer dump
-```
+https://github.com/tray-labs/admin/blob/master/app/Http/Controllers/Auth/RegisterController.php#L5
+
+https://github.com/tray-labs/admin/blob/master/config/auth.php#L70
+
+https://github.com/tray-labs/admin/blob/master/config/services.php#L33
 
 ## License
 
